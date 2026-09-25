@@ -1,0 +1,149 @@
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(111, 194, 211);
+    gap: 20px;
+    align-items: center;
+}
+.header-links {
+    display: flex;
+    gap: 20px;
+}
+.aitu-logo {
+    height: 120px;
+}
+.first-container{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: rgb(212, 239, 249);
+}
+body {
+    background-color: rgb(224, 243, 250);
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.card{
+    flex: 1;
+    padding: 16px;
+    min-width: 0;
+    text-align: center;
+}
+h2{
+    text-align:center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:"header header" "sidebar main" "footer footer";
+    gap: 10px;
+}
+.g-header {
+    grid-area: header;
+    background-color: rgb(111, 194, 211);
+    padding: 16px;
+}
+.g-sidebar {
+    grid-area: sidebar;
+    background-color: rgb(212, 239, 249);
+    padding: 16px;
+}
+.g-main {
+    grid-area: main;
+    background-color: #fff;
+    padding: 16px;
+}
+.g-footer {
+    grid-area: footer;
+    background-color: rgb(111, 194, 211);
+    padding: 16px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 16px;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    opacity: 0;
+}
+.gallery-item:hover .caption {
+    opacity: 1;
+}
+.portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(111, 194, 211);
+    padding: 16px;
+}
+.portfolio-links {
+    display: flex;
+    gap: 20px;
+}
+.portfolio-links a {
+    text-decoration: none;
+    color: #000;
+}
+.portfolio-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    padding: 16px;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+}
+.portfolio-info {
+    background-color: rgb(212, 239, 249);
+    padding: 16px;
+}
+.portfolio-footer {
+    background-color: rgb(111, 194, 211);
+    padding: 16px;
+    text-align: center;
+}
+.contact-section {
+    padding: 16px;
+    text-align: center;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
